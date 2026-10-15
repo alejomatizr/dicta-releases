@@ -1,0 +1,10 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] },
+    { "source": "/engine/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=86400" }] }
+  ],
+  "redirects": [
+    { "source": "/descargar", "destination": "https://github.com/alejomatizr/dicta-releases/releases/latest/download/Dicta.dmg", "permanent": false }
+  ]
+}

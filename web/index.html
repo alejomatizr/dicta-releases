@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dicta · Habla. Dicta escribe.</title>
+  <meta name="description" content="Dictado por voz para Mac, local y gratis. Mantén fn, habla y suelta: el texto aparece donde está el cursor. Modo comando, apuntes de clases y reuniones, todo en tu Mac.">
+  <meta name="theme-color" content="#191816">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dicta · Habla. Dicta escribe.">
+  <meta property="og:description" content="Dictado por voz para Mac, local y gratis. Clases y reuniones con apuntes automáticos.">
+  <meta property="og:image" content="/assets/redes/og-dicta-esfera.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/assets/heroe/heroe-poster-escritorio.webp" media="(min-width: 861px)">
+  <link rel="preload" as="image" href="/assets/heroe/heroe-poster-movil.webp" media="(max-width: 860px)">
+  <link rel="stylesheet" href="/engine/scrollcraft.css">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#descargar">Ir a la descarga</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="#inicio" aria-label="Dicta, inicio"><img src="/assets/marca/dicta-logo.svg" alt="Dicta" width="132" height="30"></a>
+    <a class="nav__cta" href="#descargar">Descargar</a>
+  </header>
+
+  <!-- El punto: la esfera de arcilla que viaja por toda la página (movimiento propio). -->
+  <img class="dot" id="dot" src="/assets/punto/punto-arcilla.webp" alt="" aria-hidden="true" width="1200" height="1200">
+  <div class="sc-grain" aria-hidden="true"></div>
+
+  <main>
+    <!-- 1 · Héroe: escritorio de noche por capas; el titular vive entre el fondo y el portátil. -->
+    <section id="inicio" class="hero" data-sc-act="pin" data-sc-span="2.3" data-sc-drift="#191816">
+      <div data-sc-stage class="hero__stage">
+        <div class="scene" data-scene data-push="0.42" data-focus-desk="1590 760 0.66 0.52 1.1" data-focus-mobile="650 790 0.5 0.34 1" data-origin-desk="1590 740" data-origin-mobile="650 790">
+          <div class="scene__canvas scene__canvas--back">
+            <img class="layer layer--poster" data-desk="/assets/heroe/heroe-poster-escritorio.webp" data-mobile="/assets/heroe/heroe-poster-movil.webp" alt="" fetchpriority="high">
+            <img class="layer layer--fondo" data-desk="/assets/heroe/heroe-fondo-escritorio.webp" data-mobile="/assets/heroe/heroe-fondo-movil.webp" alt="">
+            <img class="layer layer--ambiente-atras" data-desk="/assets/heroe/heroe-ambiente-escritorio.webp" data-mobile="/assets/heroe/heroe-ambiente-movil.webp" alt="">
+          </div>
+
+          <div class="scene__canvas scene__canvas--front">
+            <div class="hero__group">
+              <img class="layer" data-desk="/assets/heroe/heroe-portatil-escritorio.webp" data-mobile="/assets/heroe/heroe-portatil-movil.webp" alt="Un portátil abierto sobre un escritorio de nogal, de noche">
+              <!-- La interfaz real de Dicta, deformada a la perspectiva de la pantalla. -->
+              <div class="screen" data-screen aria-hidden="true">
+                <div class="screen__window">
+                  <div class="screen__bar"><i></i><i></i><i></i><span>Nuevo mensaje</span></div>
+                  <div class="screen__field">Para: <b>ana@estudio.co</b></div>
+                  <div class="screen__field">Asunto: <b>Mañana</b></div>
+                  <p class="screen__text" data-screen-text>Hola, Ana: mañana nos vemos a las tres en la biblioteca para terminar el proyecto. Llevo los apuntes de la clase.</p>
+                </div>
+                <div class="screen__pill" data-screen-pill><span></span><span></span><span></span><span></span><span></span></div>
+              </div>
+              <img class="layer layer--punto" id="hero-punto" data-desk="/assets/heroe/heroe-punto-escritorio.webp" data-mobile="/assets/heroe/heroe-punto-movil.webp" alt="">
+              <!-- Ancla del punto: misma posición que la esfera de la foto (medida en píxeles del lienzo). -->
+              <i class="dot-anchor-scene" data-dot data-dot-layer="#hero-punto" data-dot-rest="0 0.82"
+                 data-desk="2151 1208 116" data-mobile="1072 1176 87"></i>
+            </div>
+            <img class="layer layer--ambiente-delante" data-desk="/assets/heroe/heroe-ambiente-escritorio.webp" data-mobile="/assets/heroe/heroe-ambiente-movil.webp" alt="">
+            <img class="layer layer--primer-plano" data-desk="/assets/heroe/heroe-primer-plano-escritorio.webp" data-mobile="/assets/heroe/heroe-primer-plano-movil.webp" alt="">
+          </div>
+        </div>
+
+        <div class="sc-scrim hero__scrim"></div>
+        <div class="hero__copy">
+          <p class="sc-label hero__kicker">Dictado por voz para Mac · gratis</p>
+          <h1 class="sc-display hero__title">Habla. <span class="nowrap">Dicta escribe<span class="ghost-dot" aria-hidden="true"></span></span></h1>
+          <p class="sc-lede hero__lede">Mantén <kbd>fn</kbd>, habla y suelta. El texto aparece donde está el cursor, en cualquier app. Todo pasa en tu Mac.</p>
+          <div class="hero__actions">
+            <a class="button button--accent" href="#descargar">Descargar para Mac</a>
+            <span class="hero__meta"><span data-version>Última versión</span> · macOS 13+ · chip Apple</span>
+          </div>
+        </div>
+
+        <p class="hero__beat" data-sc-cue="0.52 0.94">El texto aparece donde tienes el cursor: Mail, Notas, WhatsApp, Slack, Word…</p>
+      </div>
+    </section>
+
+    <!-- 2 · Dictado: capítulo tipográfico con la píldora real en el borde de la ventana. -->
+    <section id="dictado" class="act act--dictado" data-sc-act="pin" data-sc-span="2.2" data-sc-drift="#1d1b19">
+      <div data-sc-stage class="split">
+        <div class="split__copy">
+          <p class="sc-label">01 · Dictado</p>
+          <h2 class="sc-display sc-display--lg">Mantén fn, habla y suelta<span class="dot-anchor" data-dot aria-hidden="true"></span></h2>
+          <p class="sc-body">Dicta escucha mientras mantienes la tecla y pega el texto al soltarla, con tildes, mayúsculas y puntuación. Quita las muletillas, entiende «nueva línea» y aprende tus palabras con el diccionario.</p>
+          <ul class="facts">
+            <li><b>~2 s</b> de tu voz al texto</li>
+            <li><b>Doble toque</b> para dictar manos libres</li>
+            <li><b>Esc</b> para cancelar</li>
+          </ul>
+        </div>
+        <div class="split__demo">
+          <div class="mock" data-dictado>
+            <div class="mock__bar"><i></i><i></i><i></i><span>Notas</span></div>
+            <p class="mock__text"><span class="mock__typed" data-dictado-text>Ideas para la presentación del jueves: empezar con el problema, mostrar la demo en vivo y cerrar con los números del piloto.</span><span class="caret"></span></p>
+            <p class="mock__hint" data-dictado-hint>Mantén <kbd>fn</kbd>…</p>
+          </div>
+        </div>
+        <!-- La píldora de Dicta, como en la app: vertical, en el borde derecho de la pantalla. -->
+        <div class="edge-pill" data-edge-pill aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+    </section>
+
+    <!-- 3 · Modo comando: un mensaje se selecciona, se pide un cambio y se reescribe. -->
+    <section id="comando" class="act act--comando" data-sc-act="pin" data-sc-span="2.4" data-sc-drift="#1f1c1a">
+      <div data-sc-stage class="split split--reverse">
+        <div class="split__copy">
+          <p class="sc-label">02 · Modo comando</p>
+          <h2 class="sc-display sc-display--lg">Selecciona y pide un cambio<span class="dot-anchor" data-dot aria-hidden="true"></span></h2>
+          <p class="sc-body">Selecciona un texto, mantén <kbd>fn</kbd> + <kbd>⌃</kbd> y di qué hacer: «hazlo más formal», «pásalo a viñetas», «tradúcelo al inglés». Sin selección, escribe lo que pidas. Lo hace Apple Intelligence, en tu Mac y sin coste.</p>
+          <button class="button button--ghost" type="button" data-open-tutorial>
+            <span class="play" aria-hidden="true">▶</span> Ver el tutorial · 23 s
+          </button>
+        </div>
+        <div class="split__demo">
+          <div class="mock mock--command" data-comando>
+            <div class="mock__bar"><i></i><i></i><i></i><span>Mail · Reunión de mañana</span></div>
+            <div class="mock__swap">
+              <p class="mock__text mock__before"><span class="sel" data-comando-sel>oye, mañana no puedo ir a la reunión, se me complicó todo, ¿lo movemos?</span></p>
+              <p class="mock__text mock__after">Hola a todos: mañana no podré asistir a la reunión por un imprevisto. ¿Podríamos reprogramarla? Gracias.</p>
+            </div>
+            <div class="order" data-comando-order>
+              <span class="keys"><kbd>fn</kbd> + <kbd>⌃</kbd></span>
+              <span class="order__bubble">«Hazlo más formal»</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 · Clases y reuniones (pico): la videollamada sigue y los apuntes se ordenan solos. -->
+    <section id="clases" class="act act--scene act--clases" data-sc-act="pin" data-sc-span="2.8" data-sc-drift="#151413">
+      <div data-sc-stage class="chapter">
+        <div class="scene" data-scene data-push="0.08" data-focus-desk="1800 640 0.7 0.5 1" data-focus-mobile="760 900 0.5 0.32 1">
+          <div class="scene__canvas scene__canvas--back">
+            <img class="layer layer--plano" data-desk="/assets/capitulos/capitulo-clase-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-clase-plano-movil.webp" alt="Una videollamada de clase en un portátil, de noche, junto a un cuaderno">
+          </div>
+          <div class="scene__canvas scene__canvas--front">
+            <img class="layer layer--auriculares" data-desk="/assets/capitulos/capitulo-clase-primer-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-clase-primer-plano-movil.webp" alt="">
+          </div>
+        </div>
+        <div class="sc-scrim sc-scrim--left chapter__scrim"></div>
+        <div class="chapter__copy chapter__copy--left">
+          <p class="sc-label">03 · Clases y reuniones</p>
+          <h2 class="sc-display sc-display--lg">Escucha. Dicta toma los apuntes<span class="dot-anchor" data-dot aria-hidden="true"></span></h2>
+          <div class="notes" data-notes>
+            <div class="notes__head"><span class="rec"></span><span data-notes-status>Grabando · Cálculo I</span><span class="notes__clock" data-notes-clock>0:00</span></div>
+            <ol class="notes__transcript">
+              <li><time>0:00</time> Hoy vamos a ver la regla de la cadena.</li>
+              <li><time>0:20</time> La derivada de una función compuesta es la derivada de afuera por la de adentro.</li>
+              <li><time>0:41</time> Para el parcial del jueves, practiquen los ejercicios del capítulo tres.</li>
+            </ol>
+            <div class="notes__summary">
+              <h3>Apuntes</h3>
+              <p><b>Regla de la cadena:</b> (f ∘ g)′ = f′(g(x)) · g′(x).</p>
+              <p><b>Tarea:</b> ejercicios del capítulo 3 · parcial el jueves.</p>
+            </div>
+          </div>
+          <ul class="facts facts--compact">
+            <li>Detecta Teams, Zoom y Meet y pregunta si grabar</li>
+            <li>Graba lo que dicen los demás, no solo tu voz</li>
+            <li>Carpetas por materia y apuntes con Apple Intelligence</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · Privado: silencio intencionado; el punto se posa en el cuaderno. -->
+    <section id="privado" class="act act--scene act--privado" data-sc-act="pin" data-sc-span="1.9" data-sc-drift="#100f0e">
+      <div data-sc-stage class="chapter">
+        <div class="scene" data-scene data-push="0.06">
+          <div class="scene__canvas scene__canvas--back">
+            <img class="layer layer--plano" data-desk="/assets/capitulos/capitulo-privado-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-privado-plano-movil.webp" alt="Un cuaderno cerrado bajo la luz de una lámpara">
+          </div>
+          <div class="scene__canvas scene__canvas--front">
+            <img class="layer" id="privado-punto" data-desk="/assets/capitulos/capitulo-privado-primer-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-privado-primer-plano-movil.webp" alt="">
+            <i class="dot-anchor-scene" data-dot data-dot-layer="#privado-punto" data-dot-rest="0.22 0.78"
+               data-desk="1790 1144 186" data-mobile="654 1072 150"></i>
+          </div>
+        </div>
+        <div class="sc-scrim sc-scrim--bottom chapter__scrim"></div>
+        <div class="chapter__copy chapter__copy--top">
+          <p class="sc-label">04 · Privado</p>
+          <h2 class="sc-display sc-display--lg">Tu voz se queda en tu Mac</h2>
+          <p class="sc-body">Dicta transcribe con Whisper y escribe con Apple Intelligence dentro de tu Mac. Sin cuentas, sin servidores, sin suscripción. Funciona sin internet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 · Descarga: amanece; el punto se posa en la mesa y se convierte en el botón. -->
+    <section id="descargar" class="act act--scene act--final" data-sc-act="pin" data-sc-span="2" data-sc-drift="#191816">
+      <div data-sc-stage class="chapter">
+        <div class="scene" data-scene data-push="0.06">
+          <div class="scene__canvas scene__canvas--back">
+            <img class="layer layer--plano" data-desk="/assets/capitulos/capitulo-final-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-final-plano-movil.webp" alt="Un escritorio ordenado al amanecer">
+          </div>
+          <div class="scene__canvas scene__canvas--front">
+            <img class="layer" id="final-punto" data-desk="/assets/capitulos/capitulo-final-primer-plano-escritorio.webp" data-mobile="/assets/capitulos/capitulo-final-primer-plano-movil.webp" alt="">
+            <i class="dot-anchor-scene" data-dot data-dot-layer="#final-punto" data-dot-rest="0 0.3"
+               data-desk="1446 1300 82" data-mobile="642 1321 61"></i>
+          </div>
+        </div>
+        <div class="final">
+          <h2 class="sc-display sc-display--lg final__title">Empieza a dictar hoy</h2>
+          <a class="download" data-download href="https://github.com/alejomatizr/dicta-releases/releases/latest/download/Dicta.dmg">
+            <span class="download__dot dot-anchor-button" data-dot data-dot-rest="0.62 1"></span>
+            <span class="download__label">Descargar Dicta</span>
+          </a>
+          <p class="final__meta"><span data-version>Última versión</span> · <span data-size>.dmg</span> · macOS 13+ · Mac con chip Apple</p>
+          <p class="final__links">
+            <a data-download-zip href="https://github.com/alejomatizr/dicta-releases/releases/latest/download/Dicta.zip">Descargar .zip</a>
+            <a href="https://github.com/alejomatizr/dicta-releases/releases" target="_blank" rel="noopener">Todas las versiones</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instalación: contenido normal, sin escena. -->
+    <section class="sc-section install" id="instalar" data-sc-act="flow" data-sc-drift="#191816">
+      <div class="sc-wrap install__grid">
+        <div>
+          <p class="sc-label">Instalación</p>
+          <h2 class="sc-display sc-display--md">Tres pasos, una sola vez</h2>
+          <p class="sc-body">Después Dicta se actualiza sola: te avisa cuando hay versión nueva y se instala con un clic.</p>
+        </div>
+        <ol class="steps" data-sc-in data-sc-stagger="80">
+          <li><b>Arrastra Dicta a Aplicaciones.</b> Abre el <code>.dmg</code> y suelta el icono sobre la carpeta. Ábrela desde Aplicaciones.</li>
+          <li><b>Permite abrirla.</b> macOS la bloquea la primera vez porque no está firmada por Apple: ve a Ajustes del Sistema → Privacidad y seguridad → <i>Abrir igualmente</i>.</li>
+          <li><b>Sigue la bienvenida.</b> Descarga el modelo de voz (575 MB, solo la primera vez), permite el micrófono, Monitorización de entrada y Accesibilidad.</li>
+        </ol>
+        <details class="help">
+          <summary>¿No abre o dice que está dañada?</summary>
+          <p>Abre la app Terminal, pega esto y pulsa Enter. Si macOS avisa «Possible malware», elige <i>Paste Anyway</i>: el comando solo quita la marca de «descargado de internet» a Dicta. Si no muestra nada, funcionó.</p>
+          <div class="code"><code data-copy-source>xattr -dr com.apple.quarantine /Applications/Dicta.app</code><button type="button" data-copy>Copiar</button></div>
+          <p>Si responde «Operation not permitted», activa Terminal en Ajustes del Sistema → Privacidad y seguridad → Gestión de apps y repite.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="sc-wrap foot__inner">
+      <img src="/assets/marca/dicta-logo.svg" alt="Dicta" width="110" height="25">
+      <p>Dictado por voz local y gratis para Mac. Transcripción con <a href="https://github.com/ggml-org/whisper.cpp" target="_blank" rel="noopener">whisper.cpp</a>; IA con Apple Intelligence.</p>
+      <p class="foot__small">Web construida con <a href="https://github.com/nateherkai/scroll-craft" target="_blank" rel="noopener">scroll-craft</a> (MIT). Dicta no está afiliada a Apple, Microsoft ni Zoom.</p>
+    </div>
+  </footer>
+
+  <dialog class="tutorial" data-tutorial>
+    <div class="tutorial__box">
+      <div class="tutorial__head"><h2>Modo comando</h2><button type="button" data-close-tutorial aria-label="Cerrar">✕</button></div>
+      <video src="/assets/video/tutorial-comando.mp4" poster="/assets/video/tutorial-poster.jpg" controls playsinline preload="none"></video>
+    </div>
+  </dialog>
+
+  <script src="/engine/scrollcraft.js"></script>
+  <script src="/site.js"></script>
+</body>
+</html>
