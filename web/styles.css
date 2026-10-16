@@ -231,6 +231,7 @@ kbd {
 .notes__summary p { margin: 2px 0; color: var(--sc-ink); }
 .notes__summary b { font-weight: 500; }
 .facts--compact { margin-top: var(--sc-5); gap: var(--sc-2); }
+.consent { margin: var(--sc-4) 0 0; max-width: 30rem; font-size: var(--sc-t-xs); line-height: 1.5; color: var(--sc-ink-soft); }
 
 /* --------------------------------------------------------------- final -- */
 .final {
