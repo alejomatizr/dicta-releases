@@ -207,10 +207,11 @@ kbd {
 .chapter { background: var(--sc-canvas); }
 .chapter__scrim { z-index: 3; --sc-scrim-a: 88%; }
 .chapter__copy { position: absolute; z-index: 4; }
-.chapter__copy--left { left: var(--sc-gutter); top: calc(var(--nav-h) + 2vh); bottom: 4vh; width: min(34rem, 46vw); display: flex; flex-direction: column; justify-content: center; }
+.chapter__copy--left { left: var(--sc-gutter); top: calc(var(--nav-h) + 2vh); bottom: 4vh; width: min(38rem, 46vw); display: flex; flex-direction: column; justify-content: center; }
 .chapter__copy--top { left: var(--sc-gutter); right: var(--sc-gutter); top: calc(var(--nav-h) + 6vh); max-width: 40rem; }
 .chapter__copy .sc-display { margin: var(--sc-3) 0 var(--sc-5); line-height: 1.02; }
 .act--privado .chapter__scrim { --sc-scrim-angle: 180deg; }
+.act--clases .sc-display--lg { font-size: clamp(2.1rem, 1.3rem + 2.7vw, 3.9rem); }
 
 .notes {
   background: color-mix(in oklab, #1f1d1b 92%, transparent); border: 1px solid var(--line);
@@ -226,6 +227,15 @@ kbd {
 .notes__transcript li, .notes__summary { opacity: 0; translate: 0 6px; transition: opacity 400ms var(--sc-ease-out), translate 400ms var(--sc-ease-out); }
 .notes__transcript li.is-on, .notes__summary.is-on { opacity: 1; translate: 0 0; }
 .notes__transcript time { color: var(--sc-ink-soft); font-size: 0.78rem; margin-right: 6px; font-variant-numeric: tabular-nums; }
+.flag { display: inline-block; margin-right: 4px; padding: 1px 7px; border-radius: 999px; font: 600 0.68rem/1.5 var(--sc-font-text); letter-spacing: 0.04em; text-transform: uppercase; color: var(--sc-accent-ink); background: var(--sc-accent); vertical-align: 0.08em; }
+.notes__slide { display: flex; align-items: center; gap: 10px; color: var(--sc-ink-soft); }
+.notes__slide time { margin-right: 0; }
+.mini-slide { display: grid; gap: 3px; width: 92px; padding: 7px 8px; border-radius: 5px; background: #f4f0e8; box-shadow: var(--sc-e1); }
+.mini-slide b { font: 600 0.5rem/1.2 var(--sc-font-text); color: #2b2926; }
+.mini-slide i { display: block; height: 3px; border-radius: 2px; background: #cfc7ba; }
+.mini-slide i:last-child { width: 60%; }
+.chip { display: inline-block; margin-left: 4px; padding: 1px 8px; border-radius: 999px; font-size: 0.74rem; color: #8fd19e; border: 1px solid color-mix(in oklab, #8fd19e 40%, transparent); }
+.beta { padding: 0 6px; border-radius: 999px; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--sc-accent); border: 1px solid color-mix(in oklab, var(--sc-accent) 50%, transparent); }
 .notes__summary { margin-top: var(--sc-4); padding-top: var(--sc-3); border-top: 1px solid var(--line); }
 .notes__summary h3 { margin: 0 0 4px; font: 500 1.05rem/1.3 var(--sc-font-display); color: var(--sc-accent); }
 .notes__summary p { margin: 2px 0; color: var(--sc-ink); }
@@ -339,7 +349,10 @@ kbd {
   .split .sc-body { display: none; }
 }
 @media (min-width: 861px) and (max-height: 760px) {
-  .facts--compact, .split .facts { display: none; }
+  .split .facts { display: none; }
+}
+@media (min-width: 861px) and (max-height: 899px) {
+  .facts--compact { display: none; }
 }
 
 /* ------------------------------------------------------ movimiento reducido -- */

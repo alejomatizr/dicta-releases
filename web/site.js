@@ -179,7 +179,7 @@
 
     // Clases: la transcripción avanza y los apuntes aparecen solos.
     var kp = reduce ? 1 : clasesAct.p;
-    [0.06, 0.22, 0.4].forEach(function (at, i) { toggle(notesLines[i], 'is-on', kp > at); });
+    [0.06, 0.18, 0.3, 0.42].forEach(function (at, i) { if (notesLines[i]) toggle(notesLines[i], 'is-on', kp > at); });
     var done = kp > 0.62;
     toggle(notesSummary, 'is-on', done);
     toggle(notes, 'is-done', done);
